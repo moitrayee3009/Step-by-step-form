@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepper Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form>
+        <div class="tab">
+            <input type="text" class="input" placeholder="Firstname">
+            <input type="text" class="input" placeholder="Lastname">
+
+            <div class="button_div">
+                <input type="button" name="next" value="Next" onclick="msf_btn_next()">
+            </div>
+            <div class="bullet"></div>
+            <div class="msf_line"></div>
+        </div>
+        <div class="tab">
+            <input class="input" type="date" name="date" placeholder="Birthdate">
+            <div class="radio">
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div class="button_div">
+                <input type="button" name="back" value="Back" onclick="msf_btn_back()">
+                <input type="button" name="next" value="Next" onclick="msf_btn_next()">
+            </div>
+            <div class="bullet"></div>
+            <div class="msf_line"></div>
+        </div>
+        <div class="tab">
+            <input type="email" class="input" placeholder="Email">
+            <input type="password" class="input" placeholder="Password">
+            <div class="button_div">
+                <input type="button" name="back" value="Back" onclick="msf_btn_back()">
+                <input type="button" name="next" value="Next" onclick="msf_btn_next()">
+            </div>
+            <div class="bullet"></div>
+            <div class="msf_line"></div>
+        </div>
+        <!-- <div style="text-align:center;margin-top:40px;">
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+        </div> -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
